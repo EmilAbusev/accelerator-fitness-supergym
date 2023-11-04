@@ -1,0 +1,17 @@
+.logotype {
+  padding: 10px;
+  width: 120px;
+  height: 26px;
+
+
+  @include vp-1365 {
+    width: 131px;
+    height: 44px;
+  }
+
+  @include vp-767 {
+    width: 122px;
+    height: 42px;
+  }
+}
+}
