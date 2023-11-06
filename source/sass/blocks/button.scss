@@ -1,0 +1,55 @@
+.button {
+  display: inline-flex;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  user-select: none;
+
+  color: $color-default-white;
+  text-transform: uppercase;
+
+  background-color: $color-neon-blue;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+
+.button--hero {
+  border: 2px solid $color-default-white;
+  background-color: $color-transparent;
+
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    background-color: $color-default-white;
+    color: $colo-egyptian-blue;
+  }
+
+  &:active:not([disabled]) {
+    background-color: $color-default-white;
+    color: $color-sapphire;
+  }
+
+  &[disabled] {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.5;
+  }
+}

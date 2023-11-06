@@ -7,12 +7,12 @@
     <meta name="description" content="Проект Акселератора. Фитнес центр Super Gym">
     <title>AcceleratorFitnessSupergym</title>
     <link rel="stylesheet" href="css/style.min.css">
-    <link href="fonts/alumni-sans-v18-latin-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/alumni-sans-v18-latin-800.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/roboto-condensed-v27-latin-300.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/roboto-condensed-v27-latin-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link href="fonts/roboto-condensed-v27-latin-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="icon" href="favicon.ico">
+    <link href="fonts/alumni-sans-v18-cyrillic-600.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/alumni-sans-v18-cyrillic-800.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/roboto-condensed-v27-cyrillic-300.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/roboto-condensed-v27-cyrillic-regular.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link href="fonts/roboto-condensed-v27-cyrillic-700.woff2" rel="preload" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg">
     <link rel="apple-touch-icon" href="img/favicons/favicon-up.png" type="image/png">
   </head>
@@ -22,30 +22,30 @@
         <div class="container">
         <div class="header__block">
           <nav class="header__main-navigation main-navigation">
-            <a class="main-navigation__logo" href="index.html">
+            <a class="main-navigation__logo logotype" href="index.html">
               <img src="img/header/logotype.svg" width="120" height="26" alt="Логотип фитнес центра">
             </a>
             <a class="main-navigation__phone" href="tel:+78005555555">
-              <img src="img/header/phone.svg" width="187" height="26" alt="Телефон фетнес центра">
+              <span>8-800-555-55-55</span>
             </a>
           </nav>
-          <section class="header__hero">
+          <section class="header__hero hero">
             <div class="hero__container">
-              <h1>ФИТНЕС ЦЕНТР</h1>
               <p>ОМСК</p>
+              <h1>ФИТНЕС ЦЕНТР</h1>
               <ul class="hero__list">
                 <li class="hero__list-item">Тренажёрный зал</li>
                 <li class="hero__list-item">Групповые занятия</li>
                 <li class="hero__list-item">Кардио-зона</li>
               </ul>
-              <a class="hero__button" href="#subscription">Купить абонемент</a>
+              <a class="hero__button button button--hero" href="#subscription">Купить абонемент</a>
+            </div>
             <div class="hero__image">
               <picture>
                 <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/header/photo-hero-tablet@1x.jpg 1x, ./img/header/photo-hero-tablet@2x.jpg 2x">
                 <source type="image/jpeg" media="(max-width: 1366px)" width="500" height="524" srcset="./img/header/photo-hero-desktop@1x.jpg 1x, ./img/header/photo-hero-desktop@2x.jpg 2x">
                 <img src="./img/header/photo-hero-desktop@1x.jpg" srcset="./img/header/photo-hero-desktop@2x.jpg 2x" width="500" height="524" alt="Фотография супер-тренера">
               </picture>
-            </div>
             </div>
           </section>
         </div>
@@ -63,16 +63,25 @@
                   <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
                      Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
                      В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами.
-                     Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.</p>
+                     Также в фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+                  </p>
                 </div>
               </div>
             </div>
             <div class="information__media">
               <div class="information__image">
-                <img>
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/header/photo-hero-tablet@1x.jpg 1x, ./img/header/photo-hero-tablet@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1366px)" width="500" height="524" srcset="./img/header/photo-hero-desktop@1x.jpg 1x, ./img/header/photo-hero-desktop@2x.jpg 2x">
+                <img src="./img/header/photo-hero-desktop@1x.jpg" srcset="./img/header/photo-hero-desktop@2x.jpg 2x" width="500" height="524" alt="Фотография супер-тренера">
+                </picture>
               </div>
               <div class="information__video">
-                <img>
+                <picture>
+                  <source type="image/jpeg" media="(max-width: 1365px)" width="324" height="390" srcset="./img/header/photo-hero-tablet@1x.jpg 1x, ./img/header/photo-hero-tablet@2x.jpg 2x">
+                <source type="image/jpeg" media="(max-width: 1366px)" width="500" height="524" srcset="./img/header/photo-hero-desktop@1x.jpg 1x, ./img/header/photo-hero-desktop@2x.jpg 2x">
+                <img src="./img/header/photo-hero-desktop@1x.jpg" srcset="./img/header/photo-hero-desktop@2x.jpg 2x" width="500" height="524" alt="Фотография супер-тренера">
+                </picture>
               </div>
             </div>
           </div>
@@ -96,12 +105,10 @@
             <div class="subscription__price">
               <ul class="subscription__price-list subscription__list-current">
                 <li class="subscription__price-item">
-                  <div class="">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
-                    <p>5000  </p>
-                  </div>
-                  <a class="" href="">Купить абонемент</a>
+                    <span>5000  </span>
+                    <a class="" href="">Купить абонемент</a>
                 </li>
                 <li class="subscription__price-item"></li>
                 <li class="subscription__price-item"></li>
