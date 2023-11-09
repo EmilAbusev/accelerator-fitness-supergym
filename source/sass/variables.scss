@@ -5,6 +5,7 @@
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
 $color-transparent:                 rgba(255, 255, 255, 0);
+$color-sapphire-05:                 rgba(16, 38, 84, 0.5);
 $color-ghost-white:                 #F8F9FC;
 $color-torch-red:                   #ED0233;
 $color-black-russian:               #030A1A;
@@ -16,11 +17,13 @@ $color-crimson:                     #D10A42;
 $color-error-red:                   #FF121F;
 $color-default-white:               #ffffff;
 $color-neon-blue:                   #2c39f2;
-$color-torch-red:                   #ff1553;
 
 // Gradient
 
-$gradient-hero-color: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$gradient-hero-color:                linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$gradient-button:                    linear-gradient(97deg, $color-torch-red 17.6%, #003eb7 95.31%);
+$gradient-border-promo:              linear-gradient(to bottom right, $color-crimson,  #00359f);
+$gradient-button:                    linear-gradient(97deg, $color-torch-red 17.6%, #003eb7 95.31%);
 
 // Typography
 // ---------------------------------

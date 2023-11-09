@@ -1,0 +1,115 @@
+.subscription {
+  position: relative;
+  background-color: $color-ghost-white;
+
+  &::before {
+    position: absolute;
+    width: 321px;
+    height: 384px;
+    background-image: url("/img/sprite/dumbbell-discs.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+    content: "";
+  }
+
+  &.container {
+    width: 100%;
+    max-width: 1920px;
+  }
+}
+
+.subscription__block {
+  display: flex;
+  padding-top: 120px;
+  flex-direction: column;
+  align-items: center;
+
+  & h2 {
+    display: block;
+    margin: 0;
+    font-family: "Alumni Sans", "Arial", sans-serif;
+    font-weight: 600;
+    font-size: 54px;
+    line-height: 54px;
+  }
+}
+
+.subscription__button-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.subscription__button-item {
+  list-style-type: none;
+}
+
+.subscription__button {
+  color: $color-sapphire-05;
+  border: none;
+  background-color: $color-transparent;
+}
+
+.subscription__price {
+
+}
+
+.subscription__price-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.subscription__price-item {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  align-items: center;
+  background-color: $color-default-white;
+  border: 7px solid $color-default-white;
+
+  & h3 {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  & p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  & span {
+    color: $colo-egyptian-blue;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 90px;
+  }
+
+  & a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    border: 2px solid $color-sapphire;
+    padding: 27px 44px;
+  }
+}
+
+.subscription__list--current {
+  border-image: $gradient-border-promo;
+  border-image-slice: 1;
+
+  & a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 12px;
+    color: $color-default-white;
+    border: none;
+    background-image: $gradient-button;
+    padding: 27px 44px;
+  }
+}
