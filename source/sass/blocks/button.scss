@@ -54,6 +54,65 @@
   }
 }
 
+.subscription__button {
+  color: $color-sapphire-05;
+  border: none;
+  background-color: $color-transparent;
+  cursor: pointer;
+  padding: 18px 6px;
+  padding-bottom: 11px;
+
+  @include vp-1365 {
+    padding: 18px 13px;
+    padding-bottom: 11px;
+  }
+
+  @include vp-767 {
+    padding: 18px 0;
+    padding-bottom: 16px;
+  }
+}
+
 .subscription__button--current {
+  position: relative;
   color: $color-sapphire;
+  z-index: 0;
+
+  &::before {
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    width: calc(100% - 291px);
+    border-bottom: 3px solid $color-crimson;
+    transition: 0.7s;
+    transform: scale(1);
+    z-index: 1;
+    content: "";
+
+    @include vp-1365 {
+    }
+
+    @include vp-767 {
+    }
+  }
+
+  &:hover:not([disabled]),
+  &:active:not([disabled]),
+  &:focus:not([disabled]),
+  &.is-active {
+    outline: none;
+    color: $color-sapphire;
+
+    &::before {
+      transition: 0.7s;
+      transform: scale(0);
+    }
+  }
+
+  &[disabled],
+  &.is-disabled {
+    opacity: 0.3;
+    pointer-events: none;
+    cursor: default;
+  }
 }
