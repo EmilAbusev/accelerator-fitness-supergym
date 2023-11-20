@@ -184,8 +184,8 @@
     border-image: $gradient-border-promo;
     border-image-slice: 1;
 
-    &:hover a:last-child:not([disabled]),
-    &:focus a:last-child:not([disabled]) {
+    &:hover a:not([disabled]),
+    &:focus a:not([disabled]) {
       background-image: $gradient-button;
       border: none;
       outline: none;
@@ -198,11 +198,11 @@
     border-image: $gradient-border-promo;
     border-image-slice: 1;
 
-    a:active:last-child:not([disabled]) {
+    a:active:not([disabled]) {
       background-image: $gradient-button;
-      border: none;
       color: $color-white-05;
-      margin-top: 38px;
+      border: none;
+      margin-top: 39px;
     }
   }
 
@@ -328,6 +328,23 @@
     text-transform: uppercase;
     letter-spacing: 0.6px;
 
+    &:hover:not([disabled]),
+    &:focus:not([disabled]) {
+      background-image: $gradient-button;
+      border: none;
+      outline: none;
+      color: $color-default-white;
+      margin-top: 38px;
+    }
+
+    &:active:not([disabled]) {
+      background-image: $gradient-button;
+      color: $color-white-05;
+      border: none;
+      margin-top: 30px;
+    }
+
+
     &[disabled] {
       opacity: 0.5;
       cursor: default;
@@ -361,6 +378,27 @@
   border-image: $gradient-border-promo;
   border-image-slice: 1;
 
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
+    border-image: $gradient-border-promo;
+    border-image-slice: 1;
+
+    &:hover a:last-child:not([disabled]),
+    &:focus a:last-child:not([disabled]) {
+      background-image: none;
+      color: $colo-egyptian-blue;
+      border: 3px solid $color-sapphire;
+      margin-top: 35px;
+    }
+
+    &:active a:last-child:not([disabled]) {
+      background-image: none;
+      color: $color-sapphire;
+      border: 3px solid $color-sapphire;
+      margin-top: 35px;
+    }
+  }
+
   & a {
     margin-top: 37px;
     font-weight: 700;
@@ -369,14 +407,6 @@
     color: $color-default-white;
     border: none;
     background-image: $gradient-button;
-
-    &:hover:not([disabled]),
-    &:focus:not([disabled]) {
-      background-image: none;
-      color: $colo-egyptian-blue;
-      border: 3px solid $color-sapphire;
-      margin-top: 35px;
-    }
 
     &:active:not([disabled]) {
       background-image: none;

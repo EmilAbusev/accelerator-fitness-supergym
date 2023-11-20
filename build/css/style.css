@@ -1513,7 +1513,7 @@ button,
      border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
 }
-.subscription__price-item:hover:not([disabled]):hover a:last-child:not([disabled]), .subscription__price-item:hover:not([disabled]):focus a:last-child:not([disabled]), .subscription__price-item:focus:not([disabled]):hover a:last-child:not([disabled]), .subscription__price-item:focus:not([disabled]):focus a:last-child:not([disabled]) {
+.subscription__price-item:hover:not([disabled]):hover a:not([disabled]), .subscription__price-item:hover:not([disabled]):focus a:not([disabled]), .subscription__price-item:focus:not([disabled]):hover a:not([disabled]), .subscription__price-item:focus:not([disabled]):focus a:not([disabled]) {
   background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   border: none;
   outline: none;
@@ -1526,11 +1526,11 @@ button,
      border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
 }
-.subscription__price-item:active:not([disabled]) a:active:last-child:not([disabled]) {
+.subscription__price-item:active:not([disabled]) a:active:not([disabled]) {
   background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: none;
   color: rgba(255, 255, 255, 0.5);
-  margin-top: 38px;
+  border: none;
+  margin-top: 39px;
 }
 .subscription__price-item[disabled] {
   opacity: 0.2;
@@ -1658,6 +1658,19 @@ button,
   text-transform: uppercase;
   letter-spacing: 0.6px;
 }
+.subscription__price-item a:hover:not([disabled]), .subscription__price-item a:focus:not([disabled]) {
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: none;
+  outline: none;
+  color: #ffffff;
+  margin-top: 38px;
+}
+.subscription__price-item a:active:not([disabled]) {
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin-top: 30px;
+}
 .subscription__price-item a[disabled] {
   opacity: 0.5;
   cursor: default;
@@ -1689,6 +1702,24 @@ button,
      border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
 }
+.subscription__item--current:hover:not([disabled]), .subscription__item--current:focus:not([disabled]) {
+  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+     border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+  border-image-slice: 1;
+}
+.subscription__item--current:hover:not([disabled]):hover a:last-child:not([disabled]), .subscription__item--current:hover:not([disabled]):focus a:last-child:not([disabled]), .subscription__item--current:focus:not([disabled]):hover a:last-child:not([disabled]), .subscription__item--current:focus:not([disabled]):focus a:last-child:not([disabled]) {
+  background-image: none;
+  color: #103aae;
+  border: 3px solid #102654;
+  margin-top: 35px;
+}
+.subscription__item--current:hover:not([disabled]):active a:last-child:not([disabled]), .subscription__item--current:focus:not([disabled]):active a:last-child:not([disabled]) {
+  background-image: none;
+  color: #102654;
+  border: 3px solid #102654;
+  margin-top: 35px;
+}
 .subscription__item--current a {
   margin-top: 37px;
   font-weight: 700;
@@ -1697,12 +1728,6 @@ button,
   color: #ffffff;
   border: none;
   background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-}
-.subscription__item--current a:hover:not([disabled]), .subscription__item--current a:focus:not([disabled]) {
-  background-image: none;
-  color: #103aae;
-  border: 3px solid #102654;
-  margin-top: 35px;
 }
 .subscription__item--current a:active:not([disabled]) {
   background-image: none;
