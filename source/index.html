@@ -98,17 +98,17 @@
               <h2>Абонементы</h2>
               <ul class="subscription__button-list">
                 <li class="subscription__button-item">
-                  <button class="subscription__button subscription__button--current" type="button">1 месяц</button>
+                  <button class="subscription__button" type="button" data-tab="#toggl_1">1 месяц</button>
                 </li>
                 <li class="subscription__button-item">
-                  <button class="subscription__button" type="button">6 месяцев</button>
+                  <button class="subscription__button" type="button" data-tab="#toggl_2">6 месяцев</button>
                 </li>
                 <li class="subscription__button-item">
-                  <button class="subscription__button" type="button">12 месяцев</button>
+                  <button class="subscription__button" type="button" data-tab="#toggl_3">12 месяцев</button>
                 </li>
               </ul>
             <div class="subscription__price">
-              <ul class="subscription__price-list price-list--current">
+              <ul class="subscription__price-list" id="toggl_1">
                 <li class="subscription__price-item" tabindex="0">
                     <h3>С тренером</h3>
                     <p>12 занятий</p>
@@ -116,7 +116,7 @@
                     </span>
                     <a href="./subscription.html">Купить абонемент</a>
                 </li>
-                <li class="subscription__price-item subscription__item--current is-active" tabindex="0">
+                <li class="subscription__price-item subscription__item--current" tabindex="0">
                   <h3>Дневной</h3>
                     <p>с 8:00 до 17:00 </p>
                     <span data-price-tag="1700" data-ruble="₽">1700</span>
@@ -129,7 +129,7 @@
                     <a href="./subscription.html">Купить абонемент</a>
                 </li>
               </ul>
-              <ul class="subscription__price-list visually-hidden">
+              <ul class="subscription__price-list" id="toggl_2">
                 <li class="subscription__price-item" tabindex="0">
                   <h3>С тренером</h3>
                   <p>72 занятий</p>
@@ -149,7 +149,7 @@
                   <a href="./subscription.html">Купить абонемент</a>
               </li>
               </ul>
-              <ul class="subscription__price-list visually-hidden">
+              <ul class="subscription__price-list" id="toggl_3">
                 <li class="subscription__price-item" tabindex="0">
                   <h3>С тренером</h3>
                   <p>144 занятий</p>
@@ -171,11 +171,6 @@
               </ul>
             </div>
           </div>
-          </div>
-        </section>
-        <section>
-          <div class="container">
-            <div></div>
           </div>
         </section>
       </main>

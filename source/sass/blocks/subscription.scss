@@ -148,6 +148,10 @@
 }
 
 .subscription__price-list {
+  display: none;
+}
+
+.subscription__price-list.is-active {
   display: flex;
   margin: 0;
   padding: 0;
@@ -179,11 +183,27 @@
   &:focus:not([disabled]) {
     border-image: $gradient-border-promo;
     border-image-slice: 1;
+
+    &:hover a:last-child:not([disabled]),
+    &:focus a:last-child:not([disabled]) {
+      background-image: $gradient-button;
+      border: none;
+      outline: none;
+      color: $color-default-white;
+      margin-top: 38px;
+    }
   }
 
   &:active:not([disabled]) {
     border-image: $gradient-border-promo;
     border-image-slice: 1;
+
+    a:active:last-child:not([disabled]) {
+      background-image: $gradient-button;
+      border: none;
+      color: $color-white-05;
+      margin-top: 38px;
+    }
   }
 
   &[disabled] {
@@ -307,22 +327,6 @@
     padding: 25px 42px;
     text-transform: uppercase;
     letter-spacing: 0.6px;
-
-    &:hover:not([disabled]),
-    &:focus:not([disabled]) {
-      background-image: $gradient-button;
-      border: none;
-      outline: none;
-      color: $color-default-white;
-      margin-top: 38px;
-    }
-
-    &:active:not([disabled]) {
-      background-image: $gradient-button;
-      border: none;
-      color: $color-white-05;
-      margin-top: 38px;
-    }
 
     &[disabled] {
       opacity: 0.5;

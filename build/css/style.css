@@ -669,7 +669,7 @@ button,
   padding: 8px 10px 13px 8px;
 }
 .main-navigation__phone:hover:not([disabled]), .main-navigation__phone:focus:not([disabled]) {
-  color: #1C3374;
+  color: #1c3374;
   background-color: rgba(255, 255, 255, 0);
 }
 .main-navigation__phone:active:not([disabled]) {
@@ -678,7 +678,7 @@ button,
   border-color: rgba(255, 255, 255, 0);
 }
 .main-navigation__phone[disabled] {
-  color: #F8F9FC;
+  color: #f8f9fc;
   pointer-events: none;
   cursor: default;
   outline: 0;
@@ -1095,7 +1095,7 @@ button,
 }
 
 .information__image {
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
   width: 100%;
 }
 .information__image img {
@@ -1122,7 +1122,7 @@ button,
   position: absolute;
   top: 287px;
   left: -63px;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 @media (max-width: 1365px) {
   .information__video {
@@ -1200,7 +1200,7 @@ button,
   width: 72px;
   height: 72px;
   border-radius: 50%;
-  background: linear-gradient(97deg, #ED0233 17.6%, #003eb7 95.31%);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
   content: "";
 }
 @media (max-width: 1365px) {
@@ -1244,7 +1244,7 @@ button,
   border-radius: 50%;
   opacity: 0.2;
   background-color: rgba(255, 255, 255, 0);
-  border: 2px solid #ED0233;
+  border: 2px solid #ed0233;
 }
 @media (max-width: 1365px) {
   .information__video-button::after {
@@ -1301,7 +1301,7 @@ button,
 
 .subscription {
   position: relative;
-  background-color: #F8F9FC;
+  background-color: #f8f9fc;
 }
 .subscription::before {
   position: absolute;
@@ -1463,6 +1463,10 @@ button,
 }
 
 .subscription__price-list {
+  display: none;
+}
+
+.subscription__price-list.is-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1474,14 +1478,14 @@ button,
   list-style-type: none;
 }
 @media (max-width: 1365px) {
-  .subscription__price-list {
+  .subscription__price-list.is-active {
     display: -ms-grid;
     display: grid;
     gap: 39px;
   }
 }
 @media (max-width: 767px) {
-  .subscription__price-list {
+  .subscription__price-list.is-active {
     gap: 36px;
   }
 }
@@ -1504,16 +1508,29 @@ button,
   border: 7px solid #ffffff;
 }
 .subscription__price-item:hover:not([disabled]), .subscription__price-item:focus:not([disabled]) {
-  -o-border-image: linear-gradient(to bottom right, #D10A42, #00359f);
-     border-image: -webkit-gradient(linear, left top, right bottom, from(#D10A42), to(#00359f));
-     border-image: linear-gradient(to bottom right, #D10A42, #00359f);
+  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+     border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
 }
+.subscription__price-item:hover:not([disabled]):hover a:last-child:not([disabled]), .subscription__price-item:hover:not([disabled]):focus a:last-child:not([disabled]), .subscription__price-item:focus:not([disabled]):hover a:last-child:not([disabled]), .subscription__price-item:focus:not([disabled]):focus a:last-child:not([disabled]) {
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: none;
+  outline: none;
+  color: #ffffff;
+  margin-top: 38px;
+}
 .subscription__price-item:active:not([disabled]) {
-  -o-border-image: linear-gradient(to bottom right, #D10A42, #00359f);
-     border-image: -webkit-gradient(linear, left top, right bottom, from(#D10A42), to(#00359f));
-     border-image: linear-gradient(to bottom right, #D10A42, #00359f);
+  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+     border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
+}
+.subscription__price-item:active:not([disabled]) a:active:last-child:not([disabled]) {
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 38px;
 }
 .subscription__price-item[disabled] {
   opacity: 0.2;
@@ -1580,7 +1597,7 @@ button,
   position: relative;
   margin-top: 68px;
   z-index: 1;
-  color: #103AAE;
+  color: #103aae;
   font-weight: 700;
   font-size: 60px;
   line-height: 90px;
@@ -1641,19 +1658,6 @@ button,
   text-transform: uppercase;
   letter-spacing: 0.6px;
 }
-.subscription__price-item a:hover:not([disabled]), .subscription__price-item a:focus:not([disabled]) {
-  background-image: linear-gradient(97deg, #ED0233 17.6%, #003eb7 95.31%);
-  border: none;
-  outline: none;
-  color: #ffffff;
-  margin-top: 38px;
-}
-.subscription__price-item a:active:not([disabled]) {
-  background-image: linear-gradient(97deg, #ED0233 17.6%, #003eb7 95.31%);
-  border: none;
-  color: rgba(255, 255, 255, 0.5);
-  margin-top: 38px;
-}
 .subscription__price-item a[disabled] {
   opacity: 0.5;
   cursor: default;
@@ -1680,9 +1684,9 @@ button,
 }
 
 .subscription__item--current {
-  -o-border-image: linear-gradient(to bottom right, #D10A42, #00359f);
-     border-image: -webkit-gradient(linear, left top, right bottom, from(#D10A42), to(#00359f));
-     border-image: linear-gradient(to bottom right, #D10A42, #00359f);
+  -o-border-image: linear-gradient(to bottom right, #d10a42, #00359f);
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f));
+     border-image: linear-gradient(to bottom right, #d10a42, #00359f);
   border-image-slice: 1;
 }
 .subscription__item--current a {
@@ -1692,11 +1696,11 @@ button,
   line-height: 12px;
   color: #ffffff;
   border: none;
-  background-image: linear-gradient(97deg, #ED0233 17.6%, #003eb7 95.31%);
+  background-image: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
 }
 .subscription__item--current a:hover:not([disabled]), .subscription__item--current a:focus:not([disabled]) {
   background-image: none;
-  color: #103AAE;
+  color: #103aae;
   border: 3px solid #102654;
   margin-top: 35px;
 }
@@ -1759,7 +1763,7 @@ button,
   transition: opacity 0.3s ease;
 }
 .button--red {
-  background-color: #ED0233;
+  background-color: #ed0233;
 }
 .button:disabled {
   opacity: 0.5;
@@ -1780,7 +1784,7 @@ button,
 }
 .button--hero:hover:not([disabled]), .button--hero:focus:not([disabled]) {
   background-color: #ffffff;
-  color: #103AAE;
+  color: #103aae;
 }
 .button--hero:active:not([disabled]) {
   background-color: #ffffff;
@@ -1797,56 +1801,35 @@ button,
   border: none;
   background-color: rgba(255, 255, 255, 0);
   cursor: pointer;
-  padding: 18px 6px;
-  padding-bottom: 11px;
+  padding: 18px 5px;
+  padding-bottom: 10px;
+}
+.subscription__button:hover:not([disabled]), .subscription__button:active:not([disabled]), .subscription__button:focus:not([disabled]) {
+  outline: none;
+  color: #102654;
+  border-bottom: 3px solid #d10a42;
+}
+.subscription__button[disabled], .subscription__button.is-disabled {
+  opacity: 0.3;
+  pointer-events: none;
+  cursor: default;
 }
 @media (max-width: 1365px) {
   .subscription__button {
     padding: 18px 13px;
-    padding-bottom: 11px;
+    padding-bottom: 9px;
   }
 }
 @media (max-width: 767px) {
   .subscription__button {
     padding: 18px 0;
-    padding-bottom: 16px;
+    padding-bottom: 13px;
   }
 }
 
-.subscription__button--current {
-  position: relative;
+.button-active {
   color: #102654;
-  z-index: 0;
-}
-.subscription__button--current::before {
-  position: absolute;
-  bottom: 0;
-  left: 5px;
-  width: calc(100% - 291px);
-  border-bottom: 3px solid #D10A42;
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-  z-index: 1;
-  content: "";
-}
-.subscription__button--current:hover:not([disabled]), .subscription__button--current:active:not([disabled]), .subscription__button--current:focus:not([disabled]), .subscription__button--current.is-active {
-  outline: none;
-  color: #102654;
-}
-.subscription__button--current:hover:not([disabled])::before, .subscription__button--current:active:not([disabled])::before, .subscription__button--current:focus:not([disabled])::before, .subscription__button--current.is-active::before {
-  -webkit-transition: 0.7s;
-  transition: 0.7s;
-  -webkit-transform: scale(0);
-      -ms-transform: scale(0);
-          transform: scale(0);
-}
-.subscription__button--current[disabled], .subscription__button--current.is-disabled {
-  opacity: 0.3;
-  pointer-events: none;
-  cursor: default;
+  border-bottom: 3px solid #d10a42;
 }
 
 .modal {
